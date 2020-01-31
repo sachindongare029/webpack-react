@@ -4,8 +4,10 @@ module.exports = {
   entry: "./src/index.js",
   output: {
     path: path.join(__dirname, "/build"),
-    filename: "bundlefile.js"
+    filename: "bundlefile.js",
+    sourceMapFilename: "bundlefile.js.map"
   },
+  devtool: "source-map",
   module: {
     rules: [
       {
